@@ -1,0 +1,34 @@
+<div class="list-container">
+  <div class="search">
+    <p>
+      Search: <input ng-model="$ctrl.query">
+    </p>
+    <p>
+      Sort By:
+      <select ng-model="$ctrl.orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="new">Newest</option>
+      </select>
+    </p>
+  </div>
+
+  <div class="list" >
+    <!-- <ul class="movie-column">
+        <li class="thumbnail" ng-repeat="movie in $ctrl.movies | filter: $ctrl.query | orderBy: $ctrl.orderProp"> -->
+          <div class="responsive" ng-repeat="movie in $ctrl.movies | filter: $ctrl.query | orderBy: $ctrl.orderProp">
+            <div class="gallery">
+                <div><a href="#!/movies/{{movie.id}}" class="name">{{movie.name}}</a></div>
+                <a href="#!/movies/{{movie.id}}">
+                  <img class="movie-thumb" ng-src="{{movie.imageUrl}}" alt="{{movie.name}}" />
+                </a>
+                <div class="desc">
+                    <p>{{movie.synopsis | limitTo:55}}...</p>
+                </div>
+            </div>
+          </div>
+        <!-- </li>
+    </ul> -->
+  <div class="clearfix"></div>
+  </div>
+</div>
+

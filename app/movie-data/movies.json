@@ -1,0 +1,52 @@
+[
+  {
+    "new": 0,
+    "id": "the-meg",
+    "imageUrl": "img/movies-img/the-meg.1.jpg",
+    "name": "The Meg",
+    "synopsis": "Previously thought to be extinct, a massive creature attacks a deep-sea submersible, leaving it disabled and trapping the crew at the bottom of the Pacific. With time running out, a visionary oceanographer recruits rescue diver Jonas Taylor to save the crew and the sea itself from an unimaginable threat a 75-foot-long prehistoric shark known as the Megalodon."
+  },
+  {
+    "new": 1,
+    "id": "a-star-is-born",
+    "imageUrl": "img/movies-img/a-star-is-born.1.jpg",
+    "name": "A Star Is Born",
+    "synopsis": "Seasoned musician Jackson Maine discovers and falls in love with struggling artist Ally. She has just about given up on her dream to make it big as a singer until Jackson coaxes her into the spotlight. But even as Ally's career takes off, the personal side of their relationship is breaking down, as Jackson fights an ongoing battle with his own internal demons."
+  },
+  {
+    "new": 2,
+    "id": "black-panther",
+    "imageUrl": "img/movies-img/black-panther.1.jpg",
+    "name": "Black Panther",
+    "synopsis": "After the death of his father, T'Challa returns home to the African nation of Wakanda to take his rightful place as king. When a powerful enemy suddenly reappears, T'Challa's mettle as king -- and as Black Panther -- gets tested when he's drawn into a conflict that puts the fate of Wakanda and the entire world at risk. Faced with treachery and danger, the young king must rally his allies and release the full power of Black Panther to defeat his foes and secure the safety of his people."
+  },
+  {
+    "new": 3,
+    "id": "the-nun",
+    "imageUrl": "img/movies-img/the-nun.1.jpg",
+    "name": "The Nun",
+    "synopsis": "When a young nun at a cloistered abbey in Romania takes her own life, a priest with a haunted past and a novitiate on the threshold of her final vows are sent by the Vatican to investigate. Together, they uncover the order's unholy secret. Risking not only their lives but their faith and their very souls, they confront a malevolent force in the form of a demonic nun."
+  },
+  {
+    "new": 4,
+    "id": "a-simple-favour",
+    "imageUrl": "img/movies-img/a-simple-favour.1.jpg",
+    "name": "A Simple Favor",
+    "synopsis": "A simple favour centers around Stephanie, a mommy vlogger who seeks to uncover the truth behind her best friend Emily's (Blake Lively) sudden disappearance from their small town."
+  },
+  {
+    "new": 5,
+    "id": "first-man",
+    "imageUrl": "img/movies-img/first-man.1.jpg",
+    "name": "First Man",
+    "synopsis": "A look at the life of the astronaut, Neil Armstrong, and the legendary space mission that led him to become the first man to walk on the Moon on July 20, 1969. A Biopic on the life of the legendary American Astronaut Neil Armstrong from 1961-1969, on his journey to becoming the first human to walk the moon."
+  },
+  {
+    "new": 6,
+    "id": "venom",
+    "imageUrl": "img/movies-img/venom.1.jpg",
+    "name": "Venom",
+    "synopsis": "Journalist Eddie Brock is trying to take down Carlton Drake, the notorious and brilliant founder of the Life Foundation. While investigating one of Drake's experiments, Eddie's body merges with the alien Venom -- leaving him with superhuman strength and power. Twisted, dark and fueled by rage, Venom tries to control the new and dangerous abilities that Eddie finds so intoxicating."
+  }
+ 
+]
