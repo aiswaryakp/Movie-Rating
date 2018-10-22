@@ -3,5 +3,13 @@
 angular.module('movieApp',[
   'ngRoute',
   'movieList',
-  'movieDetails'
+  'movieDetails',
+  'movieLang',
+  'navbar'
 ]);
+// app.directive("navbar", function () {
+//   return {
+//     restrict: 'E',
+//     templateUrl: 'shared/navbar.template.html'
+//   };
+// });

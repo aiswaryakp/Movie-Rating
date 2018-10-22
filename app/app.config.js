@@ -13,6 +13,9 @@ angular.
         when('/movies/:movieId', {
           template: '<movie-details></movie-details>'
         }).
+        when('/movie-lang/:lang', {
+          template: '<movie-lang></movie-lang>'
+        }).
         otherwise('/movies');
     }
   ]);

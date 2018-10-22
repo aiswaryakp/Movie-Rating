@@ -1,3 +1,14 @@
+<!-- <div class="topnav" id="nav">
+    <a class="appName" ng-href="#!/">MovieBox</a>
+    <a ng-href="#!/" class="active">Home</a>
+    <a ng-href="#">Language</a>
+    <a ng-href="#!/movie-lang/English">English</a>
+    <a ng-href="#!/movie-lang/Malayalam">Malayalam</a>
+    <a class="icon" ng-click="$ctrl.myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div> -->
+
 <div class="list-container">
   <div class="search">
     <p>
@@ -13,21 +24,18 @@
   </div>
 
   <div class="list" >
-    <!-- <ul class="movie-column">
-        <li class="thumbnail" ng-repeat="movie in $ctrl.movies | filter: $ctrl.query | orderBy: $ctrl.orderProp"> -->
           <div class="responsive" ng-repeat="movie in $ctrl.movies | filter: $ctrl.query | orderBy: $ctrl.orderProp">
             <div class="gallery">
-                <div><a href="#!/movies/{{movie.id}}" class="name">{{movie.name}}</a></div>
-                <a href="#!/movies/{{movie.id}}">
+                <a ng-href="#!/movies/{{movie.id}}">
                   <img class="movie-thumb" ng-src="{{movie.imageUrl}}" alt="{{movie.name}}" />
                 </a>
+                <div><a ng-href="#!/movies/{{movie.id}}" class="name">{{movie.name}}</a></div>
                 <div class="desc">
-                    <p>{{movie.synopsis | limitTo:55}}...</p>
+                    <p>{{movie.synopsis | limitTo:65}}...</p>
                 </div>
+                <button ng-click="addToFav(movie.id)">Add to favorites</button>
             </div>
           </div>
-        <!-- </li>
-    </ul> -->
   <div class="clearfix"></div>
   </div>
 </div>
