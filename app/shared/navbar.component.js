@@ -4,14 +4,13 @@ angular
   .module('navbar')
   .component('navbar', {
     templateUrl: 'shared/navbar.template.html',
-    controller: ['$http',
-      function navbarController($http) {
-        var self = this;
-        // self.orderProp = 'name';
+    controller: ['$http','$scope',
+      function navbarController($http, $scope) {
+        // $scope.orderProp = 'name';
         // $http.get('movie-data/movies.json').then(function (response) {
-        //   self.movies = response.data;
+        //   $scope.movies = response.data;
         // });
-        self.myFunction = function () {
+        $scope.myFunction = function () {
           var x = document.getElementById("nav");
           if (x.className === "topnav") {
             x.className += " responsive";
@@ -19,11 +18,11 @@ angular
             x.className = "topnav";
           }
         }
-        self.fun = function () {
+        $scope.showSub = function () {
           document.getElementById("myDropdown").classList.toggle("show");
       }
 
-      self.hide = function(){
+      $scope.hide = function(){
         document.getElementById("myDropdown").classList.remove("show")
 
         document.getElementById("nav").classList.add("hideNav")

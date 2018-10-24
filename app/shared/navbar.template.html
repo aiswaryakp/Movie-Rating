@@ -1,12 +1,13 @@
 <div class="topnav" id="nav">
   <a class="appName" ng-href="#!/">MovieBox</a>
   <a ng-href="#!/">Home</a>
-  <a ng-click="$ctrl.fun()">Language</a>
+  <a ng-click="showSub()">Language</a>
   <div id="myDropdown" class="dropdown-content" >  
-  <a ng-click  = "$ctrl.hide()" ng-href="#!/movie-lang/English">English</a>
-  <a ng-click  = "$ctrl.hide()" ng-href="#!/movie-lang/Malayalam">Malayalam</a>
+  <a ng-click  = "hide()" ng-href="#!/movies/English">English</a>
+  <a ng-click  = "hide()" ng-href="#!/movies/Malayalam">Malayalam</a>
   </div>
-  <a  class="icon" ng-click="$ctrl.myFunction()">
+  <a ng-click  = "hide()" ng-href="#!/movies/Favorites">Favorites</a>
+  <a  class="icon" ng-click="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>

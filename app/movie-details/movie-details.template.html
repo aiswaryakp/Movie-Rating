@@ -1,15 +1,16 @@
-<img ng-src="{{$ctrl.mainImageUrl}}" class="movie" />
+<img ng-src="{{mainImageUrl}}" class="movie" />
 
-<div class="detail-image" ng-repeat="img in $ctrl.movie.images">
+<div class="detail-image" ng-repeat="img in movie.images">
   <div class="image-gallery" >
-    <img class="movie-img" ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
+    <img class="movie-img" ng-src="{{img}}" ng-click="setImage(img)" />
   </div>
 </div>
 
 <div class="details">
-  <h1>{{$ctrl.movie.name}}</h1>
-  <h2>Director : {{$ctrl.movie.director}}</h2>
-  <h3>Release Date : {{$ctrl.movie.releaseDate}}</h3>
-  <p>{{$ctrl.movie.synopsis}}</p>
+  <h2>{{movie.name}}</h2>
+  <h3>Director : {{movie.director}}</h3>
+  <h4>Release Date : {{movie.releaseDate}}</h4>
+  <h4>Language : {{movie.language}}</h4>
+  <p style="text-align: justify">{{movie.synopsis}}</p>
 </div>
 

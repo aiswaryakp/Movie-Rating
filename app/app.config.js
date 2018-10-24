@@ -1,8 +1,9 @@
 'use strict';
 
-angular.
-  module('movieApp').
-  config(['$locationProvider','$routeProvider',
+var app = angular.module('movieApp');
+app.constant('base',
+{ URL: 'http://10.4.6.45:8080' });  
+app.config(['$locationProvider','$routeProvider',
     function config($locationProvider, $routeProvider) {
       $locationProvider.hashPrefix('!');
 
@@ -10,11 +11,11 @@ angular.
         when('/movies', {
           template: '<movie-list></movie-list>'
         }).
-        when('/movies/:movieId', {
-          template: '<movie-details></movie-details>'
+        when('/movies/:lang', {
+          template: '<movie-list></movie-list>'
         }).
-        when('/movie-lang/:lang', {
-          template: '<movie-lang></movie-lang>'
+        when('/movie-details/:movieId', {
+          template: '<movie-details></movie-details>'
         }).
         otherwise('/movies');
     }
