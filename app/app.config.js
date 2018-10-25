@@ -11,7 +11,7 @@ app.config(['$locationProvider','$routeProvider',
         when('/movies', {
           template: '<movie-list></movie-list>'
         }).
-        when('/movies/:lang', {
+        when('/movies/:param', {
           template: '<movie-list></movie-list>'
         }).
         when('/movie-details/:movieId', {
